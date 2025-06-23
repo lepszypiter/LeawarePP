@@ -20,9 +20,5 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-COPY LeawareTest.API/wait-for-it.sh /wait-for-it.sh
-RUN chmod +x /wait-for-it.sh
+ENTRYPOINT ["dotnet", "LeawareTest.API.dll"]
 
-USER $APP_UID
-
-ENTRYPOINT ["/wait-for-it.sh", "db:3306", "--", "dotnet", "LeawareTest.API.dll"]
