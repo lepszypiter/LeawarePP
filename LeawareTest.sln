@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeawareTest.Application", "LeawareTest.Application\LeawareTest.Application.csproj", "{CFE4017D-7312-4C92-BF0E-E96335B4A4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeawareTest.Domain", "LeawareTest.Domain\LeawareTest.Domain.csproj", "{25B6A868-A458-44C6-BEDD-C6958BE0C53F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeawareTest.Infrastructure", "LeawareTest.Infrastructure\LeawareTest.Infrastructure.csproj", "{770D5B84-7729-4304-B5DF-83BFF198F053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeawareTest.BuildingBlocks", "LeawareTest.BuildingBlocks\LeawareTest.BuildingBlocks.csproj", "{95BE775A-44DD-4BDD-B3FB-7B5A04BBEB93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeawareTest.API", "LeawareTest.API\LeawareTest.API.csproj", "{A2FEC488-F9A1-4AAD-ADC2-650F75A0170C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeawareTest.Blazor", "LeawareTest.Blazor\LeawareTest.Blazor.csproj", "{3594D697-6BB8-4F5C-AF53-25979E0C312F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{7674F61C-E6A7-45DA-A989-26A2318B40F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C8FC99B5-3060-4A71-A59A-98DF96C33F58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFE4017D-7312-4C92-BF0E-E96335B4A4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE4017D-7312-4C92-BF0E-E96335B4A4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE4017D-7312-4C92-BF0E-E96335B4A4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE4017D-7312-4C92-BF0E-E96335B4A4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B6A868-A458-44C6-BEDD-C6958BE0C53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B6A868-A458-44C6-BEDD-C6958BE0C53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B6A868-A458-44C6-BEDD-C6958BE0C53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B6A868-A458-44C6-BEDD-C6958BE0C53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770D5B84-7729-4304-B5DF-83BFF198F053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770D5B84-7729-4304-B5DF-83BFF198F053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770D5B84-7729-4304-B5DF-83BFF198F053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770D5B84-7729-4304-B5DF-83BFF198F053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BE775A-44DD-4BDD-B3FB-7B5A04BBEB93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BE775A-44DD-4BDD-B3FB-7B5A04BBEB93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BE775A-44DD-4BDD-B3FB-7B5A04BBEB93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BE775A-44DD-4BDD-B3FB-7B5A04BBEB93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2FEC488-F9A1-4AAD-ADC2-650F75A0170C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2FEC488-F9A1-4AAD-ADC2-650F75A0170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2FEC488-F9A1-4AAD-ADC2-650F75A0170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2FEC488-F9A1-4AAD-ADC2-650F75A0170C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3594D697-6BB8-4F5C-AF53-25979E0C312F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3594D697-6BB8-4F5C-AF53-25979E0C312F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3594D697-6BB8-4F5C-AF53-25979E0C312F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3594D697-6BB8-4F5C-AF53-25979E0C312F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{25B6A868-A458-44C6-BEDD-C6958BE0C53F} = {7674F61C-E6A7-45DA-A989-26A2318B40F2}
+		{CFE4017D-7312-4C92-BF0E-E96335B4A4C1} = {7674F61C-E6A7-45DA-A989-26A2318B40F2}
+		{95BE775A-44DD-4BDD-B3FB-7B5A04BBEB93} = {7674F61C-E6A7-45DA-A989-26A2318B40F2}
+		{A2FEC488-F9A1-4AAD-ADC2-650F75A0170C} = {7674F61C-E6A7-45DA-A989-26A2318B40F2}
+		{770D5B84-7729-4304-B5DF-83BFF198F053} = {7674F61C-E6A7-45DA-A989-26A2318B40F2}
+		{3594D697-6BB8-4F5C-AF53-25979E0C312F} = {C8FC99B5-3060-4A71-A59A-98DF96C33F58}
+	EndGlobalSection
+EndGlobal

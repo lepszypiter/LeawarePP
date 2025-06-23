@@ -1,0 +1,6 @@
+@LeawareTest.API_HostAddress = http://localhost:5217
+
+GET {{LeawareTest.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

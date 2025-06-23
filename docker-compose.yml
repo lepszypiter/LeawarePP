@@ -1,0 +1,41 @@
+services:
+    db:
+        image: mysql:8.0
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: leawaretest
+        ports:
+            - "3306:3306"
+        volumes:
+            - db_data:/var/lib/mysql
+
+    api:
+        build:
+            dockerfile: ./LeawareTest.API/Dockerfile
+        environment:
+            - ConnectionStrings__DefaultConnection=server=db;database=leawaretest;user=root;password=root
+            - EmailSettings__Username=xxx
+            - EmailSettings__Password=xxx
+            - EmailSettings__Host=xxx
+            - OpenAISettings__ApiKey=xxx
+        ports:
+            - "8080:8080"
+            - "8081:8081"
+        depends_on:
+            - db
+
+    app:
+        build:
+            dockerfile: ./LeawareTest.Blazor/Dockerfile
+        environment:
+            - ASPNETCORE_URLS=http://+:5096
+            - DOTNET_RUNNING_IN_CONTAINER=true
+            - ASPNETCORE_ENVIRONMENT=Development
+            - Api__BaseAddress=http://api:8080
+        ports:
+            - "5096:5096"
+        depends_on:
+            - api
+volumes:
+    db_data:
+
