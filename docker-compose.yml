@@ -14,10 +14,10 @@ services:
             dockerfile: ./LeawareTest.API/Dockerfile
         environment:
             - ConnectionStrings__DefaultConnection=server=db;database=leawaretest;user=root;password=root
-            - EmailSettings__Username=leawaretestpp@op.pl
-                - EmailSettings__Password=ZH35-W0IU-TLLS-NFZY
-                - EmailSettings__Host=imap.poczta.onet.pl
-                - OpenAISettings__ApiKey=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
+            - EmailSettings__Username=xxx
+            - EmailSettings__Password=xxx
+            - EmailSettings__Host=xxx
+            - OpenAISettings__ApiKey=xxx
         ports:
             - "8080:8080"
             - "8081:8081"
